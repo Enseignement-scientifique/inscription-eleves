@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inscription des élèves – Enseignement scientifique</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f1f5f9;
+      color: #1e293b;
+    }
+    header {
+      background: #17365d;
+      color: white;
+      padding: 32px 20px;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 10px; }
+    main {
+      max-width: 650px;
+      margin: 35px auto;
+      padding: 0 16px;
+    }
+    .carte {
+      background: white;
+      padding: 28px;
+      border-radius: 12px;
+      box-shadow: 0 3px 15px #00000012;
+    }
+    h2 { margin-top: 0; }
+    label {
+      display: block;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 7px;
+    }
+    input {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #94a3b8;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    button {
+      width: 100%;
+      padding: 14px;
+      margin-top: 24px;
+      border: none;
+      border-radius: 6px;
+      background: #64748b;
+      color: white;
+      font-size: 16px;
+      cursor: not-allowed;
+    }
+    .info {
+      background: #eff6ff;
+      padding: 15px;
+      border-radius: 8px;
+      line-height: 1.6;
+    }
+    .attente {
+      margin-top: 18px;
+      color: #92400e;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #64748b;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ENSEIGNEMENT SCIENTIFIQUE</h1>
+    <p>Inscription aux groupes de travail</p>
+  </header>
+
+  <main>
+    <section class="carte">
+      <h2>Rejoindre mon groupe</h2>
+
+      <div class="info">
+        Chaque élève doit posséder un compte GitHub.
+        Un code secret sera fourni pour rejoindre son groupe.
+        Chaque groupe peut accueillir au maximum trois élèves.
+      </div>
+
+      <form id="inscription">
+        <label for="identifiant">Identifiant GitHub</label>
+        <input id="identifiant" name="identifiant"
+               placeholder="Exemple : eleve123"
+               autocomplete="off" disabled>
+
+        <label for="groupe">Nom du groupe</label>
+        <input id="groupe" name="groupe"
+               placeholder="Exemple : 2027-2028-TG1-groupe03"
+               disabled>
+
+        <label for="code">Code secret du groupe</label>
+        <input id="code" name="code"
+               type="password"
+               placeholder="Code fourni par le professeur"
+               disabled>
+
+        <button type="button" disabled>
+          Rejoindre mon groupe
+        </button>
+      </form>
+
+      <p class="attente">
+        Les inscriptions ne sont pas encore ouvertes.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    Portail permanent des groupes – Enseignement scientifique
+  </footer>
+</body>
+</html>
